@@ -61,7 +61,12 @@ function startApp () {
             }
       
           ]).then(answers => {
-            const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+            const engineer = new Engineer(
+                answers.engineerName, 
+                answers.engineerId, 
+                answers.engineerEmail, 
+                answers.engineerGithub
+                );
             teamArray.push(engineer);
             createTeam();
           });
@@ -93,15 +98,59 @@ function startApp () {
                 name: "internSchool",
                 message: "What school does the intern attend?"
               }
-        
+
             ]).then(answers => {
-              const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
-              teamArray.push(intern);
-              createTeam();
-            });
+                const intern = new Intern(
+                    answers.internName, 
+                    answers.internId, 
+                    answers.internEmail, 
+                    answers.internSchool
+                    );
+                teamArray.push(intern);
+                createTeam();
+              });
+          
+            }
         
-          }
-    
+            function addManager() {
+                inquirer.prompt ([
+                
+                {
+                type: "input",
+                name: "managerName",
+                message: "What is the manager's name?"
+                },
+
+                {
+                type: "input",
+                name: "managerId",
+                message: "What is the manager's employee ID number?"
+                },
+
+                {
+                type: "input",
+                name: "managerEmail",
+                message: "What is the manager's email address?"
+                },
+
+                {
+                type: "input",
+                name: "managerOfficeNumber",
+                message: "What is the manager's office number?"
+                }
+            
+            ]).then(answers => {
+                const manager = new Manager(
+                    answers.managerName, 
+                    answers.managerId, 
+                    answers.managerEmail, 
+                    answers.managerOfficeNumber
+                    );
+                teamArray.push(manager);
+                createTeam();
+            });
+
+            }
       
       }
       
