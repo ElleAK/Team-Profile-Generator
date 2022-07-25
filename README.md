@@ -19,13 +19,13 @@
   #### Before using this application please install npm, inquirer, and fs
 
   ## Usage:
-  #### To use this application first clone the repository and navigate to the root folder in the command-line. Type node index.js to start the prompts. After answering all questions a new README file will be generated in your folder.
+  #### To use this application first clone the repository and navigate to the root folder in the command-line. Type node index.js to start the prompts. 
 
   ## Technologies:
-  #### Javascript,Node
+  #### Javascript,Node, HTML, CSS, Bootstrap
 
   ## Tests:
-  #### No tests at this time
+  #### All tests passed
 
   ## Contributing:
   #### Will not be accepting contributions at this time.
@@ -34,7 +34,7 @@
   #### Lindsey Kelly
 
   ## Deployed Site:
-  #### https://github.com/ElleAK/README-Generator
+  #### https://elleak.github.io/Team-Profile-Generator/
 
   ## License: ![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)
   #### https://opendatacommons.org/licenses/pddl/
