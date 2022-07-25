@@ -1,4 +1,7 @@
  # Team Portfolio Generator
+ 
+ ![image](https://user-images.githubusercontent.com/91795114/180887211-3538a226-bb5f-4bb5-9be1-49888cb45989.png)
+
 
 
   ## Table of Contents:
