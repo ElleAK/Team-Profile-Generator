@@ -1,3 +1,9 @@
-const Team = require('./lib/Team');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern'); 
 
-new Team().initializeTeam();
+const fs = require('fs'); 
+const inquirer = require('inquirer');
+
+
+new Employee().initializeEmployee();
