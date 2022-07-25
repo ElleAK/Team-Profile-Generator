@@ -1,4 +1,7 @@
  # Team Portfolio Generator
+ 
+ ![image](https://user-images.githubusercontent.com/91795114/180887211-3538a226-bb5f-4bb5-9be1-49888cb45989.png)
+
 
   ## Table of Contents:
   - [Description](#description)
@@ -34,7 +37,7 @@
   #### Lindsey Kelly
 
   ## Deployed Site:
-  #### https://github.com/ElleAK/README-Generator
+  #### https://elleak.github.io/Team-Profile-Generator/
 
   ## License: ![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)
   #### https://opendatacommons.org/licenses/pddl/
