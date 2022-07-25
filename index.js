@@ -5,7 +5,8 @@ const Intern = require('./lib/Intern');
 const path = require("path");
 const fs = require('fs'); 
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const generateTeam = require("./src/generateTeam.js")
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "index.html");
 
 teamArray = [];
@@ -35,6 +36,46 @@ function startApp () {
         }
       })
     } 
+
+    function addManager() {
+      inquirer.prompt ([
+      
+      {
+      type: "input",
+      name: "managerName",
+      message: "What is the manager's name?"
+      },
+
+      {
+      type: "input",
+      name: "managerId",
+      message: "What is the manager's employee ID number?"
+      },
+
+      {
+      type: "input",
+      name: "managerEmail",
+      message: "What is the manager's email address?"
+      },
+
+      {
+      type: "input",
+      name: "managerOfficeNumber",
+      message: "What is the manager's office number?"
+      }
+  
+  ]).then(answers => {
+      const manager = new Manager(
+          answers.managerName, 
+          answers.managerId, 
+          answers.managerEmail, 
+          answers.managerOfficeNumber
+          );
+      teamArray.push(manager);
+      createTeam();
+  });
+
+  }
 
       function addEngineer() {
           inquirer.prompt([
@@ -115,45 +156,7 @@ function startApp () {
           
             }
         
-            function addManager() {
-                inquirer.prompt ([
-                
-                {
-                type: "input",
-                name: "managerName",
-                message: "What is the manager's name?"
-                },
 
-                {
-                type: "input",
-                name: "managerId",
-                message: "What is the manager's employee ID number?"
-                },
-
-                {
-                type: "input",
-                name: "managerEmail",
-                message: "What is the manager's email address?"
-                },
-
-                {
-                type: "input",
-                name: "managerOfficeNumber",
-                message: "What is the manager's office number?"
-                }
-            
-            ]).then(answers => {
-                const manager = new Manager(
-                    answers.managerName, 
-                    answers.managerId, 
-                    answers.managerEmail, 
-                    answers.managerOfficeNumber
-                    );
-                teamArray.push(manager);
-                createTeam();
-            });
-
-            }
 
       function htmlBuilder () {
         console.log("Team created!")
