@@ -13,6 +13,7 @@
   - [Contributing](#contributing)
   - [Author](#author)
   - [Website](#link)
+  - [Walkthrough](#link)
   - [License](#license)
   - [Questions](#questions)
 
@@ -39,6 +40,9 @@
 
   ## Deployed Site:
   #### https://elleak.github.io/Team-Profile-Generator/
+  
+  ## Link to video walkthrough:
+  #### https://drive.google.com/file/d/1hHJiHm4zCVqOyUs4MvIhFMcE2aN9V5kw/view
 
   ## License: ![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)
   #### https://opendatacommons.org/licenses/pddl/
